@@ -1,11 +1,11 @@
 {
   "editor.parameterHints.enabled": true,
   "editor.suggestSelection": "first",
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
   "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
   },
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
@@ -30,5 +30,5 @@
     "--disable=no-else-return",
     "--disable=too-few-public-methods",
     "--disable=cell-var-from-loop"
-  ],
+  ]
 }
