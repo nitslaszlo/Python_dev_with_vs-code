@@ -29,6 +29,7 @@
     "--disable=line-too-long",
     "--disable=no-else-return",
     "--disable=too-few-public-methods",
-    "--disable=cell-var-from-loop"
+    "--disable=cell-var-from-loop",
+    "--disable=global-statement"
   ]
 }
