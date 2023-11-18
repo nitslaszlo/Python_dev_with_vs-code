@@ -161,7 +161,7 @@
     "property": {
         "prefix": "íproperty",
         "body": ["@property", "def ${1:jellemző_neve}(self) -> ${2:int}:", "\treturn ${3:0}"],
-        "description": "Jellemző definiálása"
+        "description": "Osztály jellemző definiálása"
     },
     "def(class method)": {
         "prefix": "ídef(class metódus)",
