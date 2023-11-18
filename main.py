@@ -1,3 +1,4 @@
+változó: str = "változó"
 feltétel: bool = True
 ciklus_feltétel: bool = True
 bejárandó: list[int] = [3, 2, 1]
@@ -82,6 +83,9 @@ halmaz_neve: set[str] = {"Szaturnusz", "Vénusz"}
 
 # ídict snippet:
 szótár_neve: dict[str, int] = {"Jenő": 36, "Béla": 13}
+
+# íprint(f) snippet:
+print(f"Példa: {változó}", end="")
 
 # ímain() snippet:
 def main() -> None:
