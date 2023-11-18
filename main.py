@@ -23,13 +23,18 @@ sorok_lista: list[str] = ["fejlécsor", "1. adatsor", "2. adatsor"]
 
 # íclass snippet:
 class osztály_neve(object):
-    # íclass(metódus) snippet:
-    def metódus_neve(self, p1: int, p2: int) -> int:
-        return p1 + p2
+    # íproperty snippet:
+    @property
+    def jellemző_neve(self) -> int:
+        return 0
 
     # def(__init__) snippet:
     def __init__(self, állomány_neve: str) -> None:
         pass
+
+    # íclass(metódus) snippet:
+    def metódus_neve(self, p1: int, p2: int) -> int:
+        return p1 + p2
 
 
 # ídef snippet:
@@ -56,7 +61,7 @@ for cilkus_változója in bejárandó:
     pass
 
 # ífor-range() snippet
-for cilkus_változója in range(0, 11): # 0-10
+for cilkus_változója in range(0, 11):  # 0-10
     pass
 
 # ítry/except snippet:
@@ -86,6 +91,7 @@ szótár_neve: dict[str, int] = {"Jenő": 36, "Béla": 13}
 
 # íprint(f) snippet:
 print(f"Példa: {változó}", end="")
+
 
 # ímain() snippet:
 def main() -> None:

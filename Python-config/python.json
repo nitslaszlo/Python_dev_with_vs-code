@@ -158,6 +158,11 @@
         "body": ["class ${1:osztály_neve}(object):", "\t${2:pass}"],
         "description": "Osztály definiálása"
     },
+    "property": {
+        "prefix": "íproperty",
+        "body": ["@property", "def ${1:jellemző_neve}(self) -> ${2:int}:", "\treturn ${3:0}"],
+        "description": "Jellemző definiálása"
+    },
     "def(class method)": {
         "prefix": "ídef(class metódus)",
         "body": ["def ${1:metódus_neve}(self, ${2:p1: int, p2: int}) -> ${3:int}:", "\treturn ${4:p1 + p2}"],
