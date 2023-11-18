@@ -1,6 +1,7 @@
 feltétel: bool = True
 ciklus_feltétel: bool = True
 bejárandó: list[int] = [3, 2, 1]
+sorok_lista: list[str] = ["fejlécsor", "1. adatsor", "2. adatsor"]
 
 
 # ítypes snippet:
@@ -20,19 +21,19 @@ bejárandó: list[int] = [3, 2, 1]
 
 
 # íclass snippet:
-class classname(object):
-    # ú class(method) snippet:
-    def metódus_neve(self, p1: int) -> int:
-        return p1
+class osztály_neve(object):
+    # íclass(metódus) snippet:
+    def metódus_neve(self, p1: int, p2: int) -> int:
+        return p1 + p2
 
     # def(__init__) snippet:
-    def __init__(self, p1: str) -> None:
+    def __init__(self, állomány_neve: str) -> None:
         pass
 
 
 # ídef snippet:
-def fg_neve(par1: int, par2: int) -> int:
-    return par1 + par2
+def függvény_neve(p1: int, p2: int) -> int:
+    return p1 + p2
 
 
 # íif snippet:
@@ -50,11 +51,11 @@ while ciklus_feltétel:
     pass
 
 # ífor snippet
-for ciklus_változója in bejárandó:
+for cilkus_változója in bejárandó:
     pass
 
 # ífor-range() snippet
-for ciklus_változója in range(0, 11):  # 0 - 10
+for cilkus_változója in range(0, 11): # 0-10
     pass
 
 # ítry/except snippet:
@@ -64,17 +65,27 @@ try:
 except ValueError as ex:
     print(ex)
 
-# íopen() snippet:
+# íopen() - olvasás snippet:
 with open("file_neve.txt", "r", encoding="utf-8") as file:
-    for sor in file.read().splitlines()[1:]: # [1:] - első sor kihagyása
+    for sor in file.read().splitlines()[1:]:  # [1:] - első sor kihagyása
         pass
+
+# íopen() - írás snippet:
+with open("file_neve.txt", "w", encoding="utf-8") as file:
+    file.writelines(sorok_lista)
 
 # ílist snippet:
 lista_neve: list[int] = [1, 2, 3]
 
+# íset snippet:
+halmaz_neve: set[str] = {"Szaturnusz", "Vénusz"}
+
+# ídict snippet:
+szótár_neve: dict[str, int] = {"Jenő": 36, "Béla": 13}
+
 # ímain() snippet:
 def main() -> None:
-    pass
+    pass  # Kezd a kódolást itt!
 
 
 if __name__ == "__main__":
